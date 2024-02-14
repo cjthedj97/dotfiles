@@ -12,7 +12,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias tts='piper-tts --model en_US-lessac-high.onnx --config en_en_US_lessac_high_en_US-lessac-high.onnx.json --output-raw |  aplay -r 22050 -f S16_LE -t raw -'
+alias tts='xsel | piper-tts --model en_US-lessac-high.onnx --config en_en_US_lessac_high_en_US-lessac-high.onnx.json --output-raw |  aplay -r 22050 -f S16_LE -t raw -'
 
 alias gpt='sgpt'
 alias chatgpt='sgpt'
