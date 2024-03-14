@@ -1,0 +1,1 @@
+alias desktop-notification='wget -nc -q -O /dev/shm/cj-icon.png https://cjthedj97.me/assets/favicon-192x192.png & echo "Enter Message" && read message && DISPLAY=:0 notify-send "From CJ" "$message" -i /dev/shm/cj-icon.png'
