@@ -13,7 +13,3 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias tts='xsel | piper-tts --model en_US-lessac-high.onnx --config en_en_US_lessac_high_en_US-lessac-high.onnx.json --output-raw |  aplay -r 22050 -f S16_LE -t raw -'
-
-alias gpt='sgpt'
-alias chatgpt='sgpt'
-alias history_stats="echo 'Count  Percentage  Command'; history | awk '{CMD[\$2]++;count++;} END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v './' | column -c3 -s ' ' -t | sort -nr | head -n10 | awk '{print \$1 \"       \" \$2 \"          \" \$3}'"
